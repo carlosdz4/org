@@ -1,5 +1,5 @@
 import "./CampoTexto.css"
-import { useState } from "react";
+
 
 const CampoTexto = (props) => {
 

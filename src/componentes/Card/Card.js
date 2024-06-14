@@ -5,14 +5,14 @@ import { AiFillCloseCircle , AiOutlineHeart, AiFillHeart } from "react-icons/ai"
 
 const Card = (props) => {
 
-    const {Equipo , Foto , Nombre, Puesto,id , fav } = props.datos;
+    const { Foto , Nombre, Puesto,id , fav } = props.datos;
     const {colorPrimario , EliminarColaborador , like} = props;
     return(
         <div className="colaborador">
             
             <AiFillCloseCircle  onClick={() =>EliminarColaborador(id)}  className="eliminar"/>
             <div className="encabezado" style={{backgroundColor: colorPrimario}}> 
-                <img src={Foto} />
+                <img src={Foto} alt={id} />
             </div>
             <div className="info">
                 <h4>{Nombre}</h4>
